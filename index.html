@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="googleoauth.js"></script>
+  </head>
+  <body>
+    <a
+      href="http://accounts.google.com/o/oauth2/v2/auth?redirect_uri=http%3A%2F%2Flocalhost%3A3000%2FgoogleOauth&client_id=1042316838737-fgkf50u39vme5a0bsl6nrjb86mfh693q.apps.googleusercontent.com&access_type=offline&response_type=code&prompt=consent&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email"
+    >
+      Login</a
+    >
+    <!-- <script>
+      function getGoogleUrl() {
+        const rootUrl = "http://accounts.google.com/o/oauth2/v2/auth";
+        const options = {
+          redirect_uri: "http://localhost:3000/googleOauth",
+          client_id:
+            "1042316838737-fgkf50u39vme5a0bsl6nrjb86mfh693q.apps.googleusercontent.com",
+          access_type: "offline",
+          response_type: "code",
+          prompt: "consent",
+          scopes: [
+            "https://www.googleapis.com/auth/userinfo.profile1",
+            "https://www.googleapis.com/auth/userinfo.email",
+          ].join(" "),
+        };
+        console.log({ options });
+      }
+      const qs = new URLSearchParams(options);
+      console.log({ qs });
+      return `${rootUrl}?${qs.toString()}`;
+    </script> -->
+  </body>
+</html>
